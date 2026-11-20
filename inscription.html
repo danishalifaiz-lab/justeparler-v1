@@ -64,7 +64,7 @@ document.getElementById("register").addEventListener("submit", async function(e)
 document.getElementById("login").addEventListener("submit", async function(e) {
   e.preventDefault();
   message.textContent = "Connexion...";
-  window.location.href = "/";
+
   try {
     const result = await request("/api/login", {
       email: document.getElementById("loginEmail").value,
